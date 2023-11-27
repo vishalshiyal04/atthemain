@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Login Form</title>
+    <style>
+        .main{
+            width: auto;
+            background: linear-gradient(to top, rgba(181, 169, 169, 0.5)0%,rgba(148, 142, 142, 0.5)10%),url(1.jpg);
+            background-position: center;
+            background-size: cover;
+            height: auto;
+            }
+        .form input{
+            width: 280px;
+            height: 45px;
+            background: transparent;
+            border-bottom: 2px solid #ff7200;
+            border-left: 1px solid #ff7200;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            color: #fff;
+            font-size: 15px; 
+            letter-spacing: 1px;
+            margin-top: 30px;
+            font-family: sans-serif;
+        }
+        .content .cn{
+            width: 160px;
+            height: 40px;
+            background: #ff7200;
+            border: none;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .4s ease;
+        }
+        .content .cn a{
+            text-decoration: none;
+            color: #000;
+            transition: .3s ease;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+    <header>
+        <img src="" width="" height="">
+        <h2 align="center"> WEB DEVELOPMENT COURCE ENTER FORM </h2>
+        <hr>
+    </header>
+    <section>
+    <articl>
+            <h3 align="center">Student Registration For Quize</h3>
+            <form name="examreg" method="post" action="">
+                <div class="content">
+                <div class="form">
+                <fieldset>
+                    <legend> Full Name: </legend>
+                    <table align="center" width="100%">
+                        <tr>
+                            <td> 
+                                <label for="sname">Surname:</label><br>
+                                <input type="text" id="sname" name="surname" placeholder="your Surname" required>
+                            </td>
+                            <td>
+                                <label for="fname">Your Name:</label><br>
+                                <input type="text" id="fname" name="firstname" placeholder="Your Name" required>
+                            </td>
+                            <td>
+                                <label for="fatname">Father Name:</label><br>
+                                <input type="text" id="fatame" name="fatname" placeholder="Your Father Name" required>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+            <table align="center" width="100%">
+                <legend> Postal Address Detail:</legend>
+                <tr> 
+                    <td> 
+                        <label for="address">Parmanent Address:</label><br>
+                        <input type="text/number" name="address" id="address" rows="5" cols="30" placeholder="Your Parmanent Address" required>
+                    </td>
+                    <td>
+                        <label for="state">State:</label><br>
+                        <input list="state" name="state" placeholder="Select Your State" required>
+                            <datalist id="state">
+                                <option value="Gujarat"></option>
+                            </datalist>
+                    </td>
+                    <td>
+                        <label for="district">District:</label><br>
+                        <input list="district" name="district" placeholder="Select Your District" required>
+                            <datalist id="district">
+                            <option value="Ahmedabad"></option>
+                            <option value="Amreli"></option>
+                            <option value="Anand"></option>
+                            <option value="Aravalli"></option>
+                            <option value="Banaskantha"></option>
+                            <option value="Bharuch"></option>
+                            <option value="Bhavnagar"></option>
+                            <option value="Botad"></option>
+                            <option value="Chhota-Udaipur"></option>
+                            <option value="Dahod"></option>
+                            <option value="Dang"></option>
+                            <option value="Devbhumi-Dwarka"></option>
+                            <option value="Gandhinagar"></option>
+                            <option value="Gir-Somnath"></option>
+                            <option value="Jamnagar"></option>
+                            <option value="Junagarh"></option>
+                            <option value="Kheda"></option>
+                            <option value="Kutch"></option>
+                            <option value="Mahisagar"></option>
+                            <option value="Mehsana"></option>
+                            <option value="Morbi"></option>
+                            <option value="Narmada"></option>
+                            <option value="Narmada"></option>
+                            <option value="Navsari"></option>
+                            <option value="Narmada"></option>
+                            <option value="Panchmahal"></option>
+                            <option value="Patan"></option>
+                            <option value="Porbandar"></option>
+                            <option value="Rajkot"></option>
+                            <option value="Sabarkantha"></option>
+                            <option value="Surat"></option>
+                            <option value="Surendranagar"></option>
+                            <option value="Tapi"></option>
+                            <option value="Vadodara"></option>
+                            <option value="Valsad"></option>
+                            </datalist>
+                    </td>
+                    <td>
+                        <label for="taluka">Taluka:</label><br>
+                        <input list="taluka" name="taluka" placeholder="Select Your Taluka" required>
+                        <datalist id="taluka">
+                            <option value="Ahmedabad"></option>
+                            <option value="Dholka"></option>
+                            <option value="Vatral"></option>
+                            <option value="Naroda"></option>
+                            <option value="Dhndhuka"></option>
+                            <option value="Vatva"></option>
+                            <option value="Sanad"></option>
+                            <option value="Viramgam"></option>
+                        </datalist>
+                    </td>
+                    <td>
+                        <label for="pin">Pincode:</label><br>
+                        <input type="number" id="pincode" name="pincode" placeholder="Pin-Code"  required>
+                    </tr>
+                    </table>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Contact Detail:</legend>
+                        <table align="center" width="100%">
+                            <tr>
+                                <td>
+                                    <label for="mobile"> Mobile No:</label><br><input type="number" id="mobile" name="mobileno" pattern="[\+][0-9]{2}[0-9\s]{6}[0-9]{5}" placeholder="Your Mobile Number" required>
+                                </td>
+                                <td>
+                                    <label for="phone">Telephone:</label><br><input type="number" id="telephone" name="telephone" pattern="[0-9\s]{4}[0-9\s]{5}[0-9]P{4}" placeholder="Your Telephone Number" required>
+                                </td>
+                                <td>
+                                    <label for="email">Email Address:</label><br><input type="email" name="email" id="email" pattern="[a-za-z0-9]+@[a-z]+\,[a-z]{2,4}" placeholder="Your Email ID" required>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Gender,Age and Cast Detail:</legend>
+                        <table align="center" width="100%">
+                            <tr>
+                                <td>
+                                    <label for="gender">Gender:</label><br>
+                                    <input list="gender" name="gender" placeholder="Select" required>
+                                        <datalist id="gender">
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </datalist>
+                                </td>
+                                <td>
+                                    <label for="category">Category:</label><br>
+                                    <input list="category" name="category" placeholder="Select" required>
+                                        <datalist id="category">
+                                        <option value="Genaral"></option>
+                                        <option value="SC"></option>
+                                        <option value="ST"></option>
+                                        <option value="OBC/SEBC"></option>
+                                        </datalist>
+                                </td>
+                                <td>
+                                    <label for="bd">Date of Birth:</label><br>
+                                    <input type="date" required>
+                                </td>
+                                <td>
+                                    <label for="age">Age:</label><br>
+                                    <input type="number" required step="1" min="15" placeholder="Your Age" required>
+                                </td>
+                                
+                                <td>
+                                    <label for="language">Language:</label><br>
+                                    <input list="language" name="language" placeholder="Select Language" required>
+                                        <datalist id="language">
+                                        <option value="English(India)"></option>
+                                        <option value="English(US-United State)"></option>
+                                        <option value="Gujarati"></option>
+                                        <option value="Hindi"></option>
+                                        </datalist>
+                                </td>  
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Education Qulification:</legend>
+                        <table align="center" width="100%">
+                            <tr>
+                                <td>
+                                    <label for="Education">Education</label><br>
+                                    <input list="education" name="education" required>
+                                    <datalist id="education">
+                                        <option value="10"></option>
+                                        <option value="12"></option>
+                                        <option value="Diploma"></option>
+                                        <option value="B.Com."></option>
+                                        <option value="B.Sc."></option>
+                                        <option value="B.A"></option>
+                                        <option value="B.B.A"></option>
+                                        <option value="B.C.A"></option>
+                                        <option value="M.Com."></option>
+                                        <option value="M.Sc."></option>
+                                        <option value="M.A"></option>
+                                        <option value="M.B.A"></option>
+                                        <option value="M.C.A"></option>
+                                        <option value="M.E."></option>
+                                    </datalist>
+                                </td>
+                                <td>
+                                    <label for="per">Percentage:</label><br>
+                                    <input type="number" step="0.01" min="50" required>
+                                </td>
+                                <td>
+                                    <label for="University">University:</label><br>
+                                    <input list="University" name="University" required>
+                                    <datalist id="University">
+                                        <option value="Gujarat University"></option>
+                                        <option value="Self Finance/Gujarat University"></option>
+                                        <option value="Private University"></option>
+                                        <option value="Other University"></option>
+                                    </datalist>
+                                </td>
+                                <td>
+                                    <label for="pass">Passing Year:</label><br>
+                                    <input type="number" min="1900" required>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <table align="center" width="100%">
+                    <tr>
+                        <td colspan="3" align="center">
+                            <button class="cn" type="submit" value="submit"><a href="#">SUBMIT</a></button>
+                            <button class="cn" type="reset" value="clear"><a href="#">CLEAR</a></button>
+                        </td>
+                    </tr>
+                </table>
+                </div>
+                </div>
+            </form>
+    </articl>
+    </section>
+    </div>
+</body>
+</html>
